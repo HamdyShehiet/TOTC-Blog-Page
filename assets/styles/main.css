@@ -1,3 +1,30 @@
 body{
     font-family: "Poppins", serif;
 }
+:root{
+    --white:#FFFFFF;
+    --black:#000000;
+    --gainsboro:#D9D9D9;
+    --slategray:#696984;
+    --lightseagreen:#49BBBD;
+    --yankees-blue:#171B41;
+    --lightsteelblue:#B2B3CF;
+    --dimgray:#5B5B5B;
+    --dark-electric-blue:#626381;
+    --mediumslateblue:#545AE8;
+    --lightskyblue:#9DCCFF;
+    --aqua:#00FFF0;
+    --cosmic-cobalt:#2F327D;
+    --roman-silver:#83839A;
+    --fs-14px:14px;
+    --fs-16px:16px;
+    --fs-18px:18px;
+    --fs-20px:20px;
+    --fs-22px:22px;
+    --fs-24px:24px;
+    --fs-26px:26px;
+    --fs-30px:30px;
+    --fs-32px:32px;
+    --fs-44px:44px;
+    --section-padding: 40px 0;
+}
