@@ -35,7 +35,8 @@ html{
 }
 body{
     background-color: var(--white);
-    font-family: "Poppins", serif
+    font-family: "Poppins", serif;
+    line-height: 1.6;
 }
 .container {
     padding: 0 15px;
@@ -74,3 +75,49 @@ img{
     max-width: 100%;
 }
 /*Utility Classes*/
+h1.title{
+    font-size: var(--fs-44px);
+    font-weight: 600;
+    color: var(--cosmic-cobalt);
+}
+h2.title{
+    font-size: var(--fs-30px);
+    font-weight: 700;
+    color: var(--black);
+}
+h3.title{
+    font-size: var(--fs-24px);
+    font-weight: 700;
+    color: var(--black);
+}
+.special-description{
+    font-size: var(--fs-24px);
+    font-weight: 500;
+    color: var(--black);
+}
+.description{
+    font-size: var(--fs-22px);
+    font-weight: 400;
+}
+.see-all{
+    font-size: var(--fs-20px);
+    font-weight: 700;
+    color: var(--lightseagreen);
+}
+.btn{
+    display: inline-block;
+    font-size: var(--fs-22px);
+    font-weight: 400;
+    background-color: var(--lightseagreen);
+    color: var(--white);
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.i-flex{
+    display: inline-flex;
+}
+/*Component*/
