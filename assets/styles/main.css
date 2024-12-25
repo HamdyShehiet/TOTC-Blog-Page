@@ -133,10 +133,10 @@ header .container nav ul li:last-child a{
     gap: 10px;
     color: var(--black);
 }
+header .container nav input{
+    display: none;
+}
 @media (max-width:991px) {
-    header .container nav input{
-        display: none;
-    }
     header .container nav label{
     cursor: pointer;
     }
@@ -165,7 +165,6 @@ header .container nav ul li:last-child a{
     }
 }
 @media (min-width:991px) {
-    header .container nav input,
     header .container nav label{
         display: none;
     }
@@ -177,4 +176,7 @@ header .container nav ul li:last-child a{
     header .container nav ul li:last-child a{
         flex-direction: row;
     }
+}
+section{
+    padding: var(--section-padding);
 }
