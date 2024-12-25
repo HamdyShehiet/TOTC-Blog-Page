@@ -71,6 +71,11 @@ h2.title{
     color: var(--black);
 }
 h3.title{
+    font-size: var(--fs-26px);
+    font-weight: 500;
+    color: var(--yankees-blue);
+}
+span.title{
     font-size: var(--fs-24px);
     font-weight: 700;
     color: var(--black);
@@ -78,7 +83,7 @@ h3.title{
 .special-description{
     font-size: var(--fs-24px);
     font-weight: 500;
-    color: var(--black);
+    color: var(--slategray);
 }
 .description{
     font-size: var(--fs-22px);
