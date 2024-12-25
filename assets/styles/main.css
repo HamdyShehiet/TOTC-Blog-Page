@@ -109,7 +109,7 @@ h3.title{
 header{
     position: sticky;
     top: 0;
-    padding: 10px 0;
+    padding: 20px 0;
     background-color: var(--white);
 }
 header .container{
@@ -118,8 +118,15 @@ header .container{
 }
 header .container nav ul >li a{
     display: block;
-    font-size: var(--fs-20px);
+    font-size: var(--fs-18px);
     color: var(--dimgray);
+}
+header .container nav ul li:last-child a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--black);
 }
 @media (max-width:991px) {
     header .container nav input{
@@ -132,9 +139,10 @@ header .container nav ul >li a{
         position: fixed;
         right: -100%;
         top: 100px;
-        max-width: 300px;
+        max-width: 250px;
         width: 80%;
-        padding: 10px 0;
+        padding: 10px;
+        overflow: hidden;
         border-radius: 20px;
         background-color: var(--lightskyblue);
         box-shadow: 0 2px 4px 0 rgba(0 0 0 / .4);
@@ -148,11 +156,20 @@ header .container nav ul >li a{
         right: 15px;
     }
     header .container nav ul li:last-child a{
+        flex-direction: row-reverse;
+    }
+}
+@media (min-width:991px) {
+    header .container nav input,
+    header .container nav label{
+        display: none;
+    }
+    header .container nav >ul{
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-direction: row-reverse;
-        gap: 15px;
-        color: var(--black);
+        gap: 30px;
+    }
+    header .container nav ul li:last-child a{
+        flex-direction: row;
     }
 }
