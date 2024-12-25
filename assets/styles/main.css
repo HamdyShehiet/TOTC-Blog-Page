@@ -106,3 +106,53 @@ h3.title{
     display: inline-flex;
 }
 /*Component*/
+header{
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    background-color: var(--white);
+}
+header .container{
+    align-items: center;
+    justify-content: space-between;
+}
+header .container nav ul >li a{
+    display: block;
+    font-size: var(--fs-20px);
+    color: var(--dimgray);
+}
+@media (max-width:991px) {
+    header .container nav input{
+        display: none;
+    }
+    header .container nav label{
+    cursor: pointer;
+    }
+    header .container nav >ul{
+        position: fixed;
+        right: -100%;
+        top: 100px;
+        max-width: 300px;
+        width: 80%;
+        padding: 10px 0;
+        border-radius: 20px;
+        background-color: var(--lightskyblue);
+        box-shadow: 0 2px 4px 0 rgba(0 0 0 / .4);
+        transition: all 200ms ease-out;
+    }
+    header .container nav>ul>li a{
+        text-align: center;
+        margin: 10px 0;
+    }
+    header .container nav input:checked ~ ul{
+        right: 15px;
+    }
+    header .container nav ul li:last-child a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 15px;
+        color: var(--black);
+    }
+}

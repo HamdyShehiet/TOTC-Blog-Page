@@ -11,26 +11,24 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo"><a href="index.html"><img src="assets/images/logo.webp" alt="Logo Icon"></a></div>
+        <div class="container flex">
+            <div class="logo"><a href="index.html"><img src="assets/images/logo.webp" alt="Logo Icon"  width="80"></a></div>
             <nav>
+                <label for="toggle"><img src="assets/icons/menu.webp" alt="Menu Icon"></label>
+                <input type="checkbox" id="toggle">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Courses</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li>
-                        <a href="#">
+                    <li class="dropdown">
+                        <a href="#" >
                             <img src="assets/images/user_1.webp" alt="User Image">
                             <span>Lina</span>
-                            <img src="assets/icons/arrow-down.webp" alt="Arroe Icon Down">
+                            <img src="assets/icons/arrow-down.webp" alt="Arroe Icon Down" >
                         </a>
                     </li>
-                    <ul>
-                        <li><a href="">Sign Up</a></li>
-                        <li><a href="">Login</a></li>
-                    </ul>
                 </ul>
             </nav>
         </div>
