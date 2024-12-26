@@ -121,7 +121,7 @@ header .container{
     align-items: center;
     justify-content: space-between;
 }
-header .container nav ul >li a{
+header .container nav ul a{
     display: block;
     font-size: var(--fs-18px);
     color: var(--dimgray);
@@ -136,6 +136,22 @@ header .container nav ul li:last-child a{
 header .container nav input{
     display: none;
 }
+header .container nav ul li:last-child ul{
+    display: none;
+    position: absolute;
+    width: 115px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0 0 0 / .2);
+    transition: all 200ms ease-out;
+}
+header .container nav ul li:last-child:hover >ul{
+    display: block;
+}
+header .container nav ul li:last-child ul li a{
+    margin: 10px 0;
+    text-align: center;
+}
 @media (max-width:991px) {
     header .container nav label{
     cursor: pointer;
@@ -146,22 +162,29 @@ header .container nav input{
         top: 100px;
         max-width: 250px;
         width: 80%;
-        padding: 10px;
-        overflow: hidden;
+        padding: 10px 0;
         border-radius: 20px;
         background-color: var(--lightskyblue);
         box-shadow: 0 2px 4px 0 rgba(0 0 0 / .4);
         transition: all 200ms ease-out;
     }
     header .container nav>ul>li a{
-        text-align: center;
         margin: 10px 0;
+        text-align: center;
     }
     header .container nav input:checked ~ ul{
         right: 15px;
     }
     header .container nav ul li:last-child a{
         flex-direction: row-reverse;
+    }
+    header .container nav ul li:last-child {
+        position: relative;
+    }
+    header .container nav ul li:last-child ul{
+        bottom: -90px;
+        left: -115px;
+        background-color: var(--lightskyblue);
     }
 }
 @media (min-width:991px) {
@@ -175,6 +198,14 @@ header .container nav input{
     }
     header .container nav ul li:last-child a{
         flex-direction: row;
+    }
+    header .container nav ul li:last-child {
+        position: relative;
+    }
+    header .container nav ul li:last-child ul{
+        top: 45px;
+        right: -80px;
+        background-color: var(--white);
     }
 }
 section{
