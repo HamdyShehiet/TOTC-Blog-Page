@@ -81,13 +81,13 @@ span.title{
     color: var(--black);
 }
 .special-description{
+    margin: 10px 0 30px 0;
     font-size: var(--fs-24px);
-    font-weight: 500;
     color: var(--slategray);
 }
 .description{
     font-size: var(--fs-22px);
-    font-weight: 400;
+    color: var(--slategray);
 }
 .see-all{
     font-size: var(--fs-20px);
@@ -96,6 +96,7 @@ span.title{
 }
 .btn{
     display: inline-block;
+    padding: 10px 30px;
     font-size: var(--fs-22px);
     font-weight: 400;
     background-color: var(--lightseagreen);
