@@ -66,6 +66,7 @@ h1.title{
     color: var(--cosmic-cobalt);
 }
 h2.title{
+    margin-bottom: 20px;
     font-size: clamp(var(--fs-26px),5vw,var(--fs-30px));
     font-weight: 700;
     color: var(--black);
@@ -76,12 +77,12 @@ h3.title{
     color: var(--yankees-blue);
 }
 span.title{
-    font-size: var(--fs-24px);
+    font-size: var(--fs-20px);
     font-weight: 700;
-    color: var(--black);
+    color: rgba(0 0 0 / .8);
 }
 .special-description{
-    margin: 10px 0 30px 0;
+    margin-bottom: 30px ;
     font-size: clamp(var(--fs-18px),5vw,var(--fs-20px));
     color: var(--slategray);
 }
@@ -210,8 +211,8 @@ header .container nav ul li:last-child ul li a{
         position: relative;
     }
     header .container nav ul li:last-child ul{
-        top: 45px;
-        right: -80px;
+        top: 35px;
+        right: -70px;
         background-color: var(--white);
     }
 }
@@ -222,10 +223,11 @@ section{
     background-color: var(--lightskyblue);
 }
 .hero .container{
-gap: 60px 60px;
+    min-height: calc(100vh - 120px);
+    gap: 60px 60px;
 }
 .hero .container article p:first-child{
-    font-size: clamp(var(--fs-18px),5vw,var(--fs-22px));
+    font-size: clamp(var(--fs-18px),4vw,var(--fs-22px));
     color: var(--black);
 }
 .hero .container article p:first-child span{
@@ -241,4 +243,28 @@ gap: 60px 60px;
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
+}
+.reading-blog .container .blog-list{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+.reading-blog .container .blog-list .blog{
+    position: relative;
+    max-width: 255px;
+    width: 100%;
+}
+.reading-blog .container .blog-list .blog  span{
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    max-width: 180px;
+    width: 80%;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 12px;
+    background-color: rgba(255 255 255 / .7);
 }
