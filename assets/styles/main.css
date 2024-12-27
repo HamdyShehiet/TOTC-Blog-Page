@@ -91,6 +91,8 @@ span.title{
     color: var(--slategray);
 }
 .see-all{
+    display: inline-block;
+    margin-bottom: 20px;
     font-size: var(--fs-20px);
     font-weight: 700;
     color: var(--lightseagreen);
