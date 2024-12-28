@@ -14,7 +14,7 @@
     --dimgray:#5B5B5B;
     --dark-electric-blue:#626381;
     --mediumslateblue:#545AE8;
-    --lightskyblue:#9dccff;
+    --lightskyblue:#cde5fdb5;
     --aqua:#00FFF0;
     --cosmic-cobalt:#2F327D;
     --roman-silver:#83839A;
@@ -67,14 +67,15 @@ h1.title{
 }
 h2.title{
     margin-bottom: 20px;
-    font-size: clamp(var(--fs-26px),5vw,var(--fs-30px));
+    font-size: clamp(var(--fs-22px),5vw,var(--fs-24px));
     font-weight: 700;
     color: var(--black);
 }
 h3.title{
-    font-size: clamp(var(--fs-24px),5vw,var(--fs-26px));
+    --text-color:#252641;
+    font-size: clamp(var(--fs-18px),5vw,var(--fs-20px));
     font-weight: 500;
-    color: var(--yankees-blue);
+    color: var(--text-color);
 }
 span.title{
     font-size: var(--fs-20px);
@@ -87,14 +88,14 @@ span.title{
     color: var(--slategray);
 }
 .description{
-    font-size: var(--fs-20px);
+    font-size: var(--fs-18px);
     color: var(--slategray);
 }
 .see-all{
     display: inline-block;
     margin-bottom: 20px;
-    font-size: var(--fs-20px);
-    font-weight: 700;
+    font-size: var(--fs-18px);
+    font-weight: 600;
     color: var(--lightseagreen);
 }
 .btn{
@@ -197,7 +198,7 @@ header .container nav ul li:last-child ul li a{
         background-color: var(--gainsboro);
     }
 }
-@media (min-width:991px) {
+@media (min-width:992px) {
     header .container nav label{
         display: none;
     }
@@ -240,7 +241,7 @@ section{
 .hero .container article a.btn{
     border-radius: 12px;
 }
-@media (min-width:991px) {
+@media (min-width:992px) {
     .hero .container{
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -269,4 +270,54 @@ section{
     padding: 8px 0;
     border-radius: 12px;
     background-color: rgba(255 255 255 / .7);
+}
+.related-blog{
+    background-color: var(--lightskyblue);
+}
+.related-blog .related-title{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.related-blog .container .lessons{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px  40px;
+    box-shadow: 0 18.83px 47.08px 0 rgb(47, 50, 125,.1);
+}
+.related-blog .container .lessons .lesson{
+    max-width: 550px;
+    width: 100%;
+    padding:30px 20px;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    background-color: var(--white);
+}
+.related-blog .container .lessons .lesson .user{
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: var(--fs-18px);
+    font-weight: 500;
+}
+.related-blog .container .lessons .lesson .details{
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: var(--fs-18px);
+    color: var(--slategray);
+}
+.related-blog .container .lessons .lesson .details a{
+    text-decoration: underline;
+}
+.related-blog .container .lessons .lesson .details .watching{
+    align-items: center;
+    gap: 10px;
+}
+@media (min-width:992px) {
+    .related-blog .container .lessons{
+        flex-direction: initial;
+        justify-content: space-between;
+    }
 }
