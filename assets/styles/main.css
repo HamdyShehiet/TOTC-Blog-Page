@@ -274,7 +274,7 @@ section{
 .related-blog{
     background-color: var(--lightskyblue);
 }
-.related-blog .related-title{
+.container .related-title{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -294,7 +294,7 @@ section{
     border-radius: 20px;
     background-color: var(--white);
 }
-.related-blog .container .lessons .lesson .user{
+.container  .user{
     align-items: center;
     gap: 10px;
     margin: 20px 0;
