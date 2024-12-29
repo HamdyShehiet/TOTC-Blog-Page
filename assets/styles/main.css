@@ -18,6 +18,7 @@
     --aqua:#00FFF0;
     --cosmic-cobalt:#2F327D;
     --roman-silver:#83839A;
+    --text-color:#252641;
     --fs-14px:14px;
     --fs-16px:16px;
     --fs-18px:18px;
@@ -52,8 +53,9 @@ a{
 input,
 button,
 textarea{
+    color: inherit;
     font: inherit;
-    /* border: none; */
+    border: none;
     outline: none;
 }
 img{
@@ -72,7 +74,6 @@ h2.title{
     color: var(--black);
 }
 h3.title{
-    --text-color:#252641;
     margin: 10px 0;
     font-size:var(--fs-18px);
     font-weight: 500;
@@ -220,7 +221,8 @@ header .container nav ul li:last-child ul li a{
         background-color: var(--white);
     }
 }
-section{
+section,
+footer{
     padding: var(--section-padding);
 }
 .hero {
@@ -363,4 +365,79 @@ section{
     font-size: var(--fs-22px);
     font-weight: 700;
     color: var(--lightseagreen);
+}
+footer{
+    background-color: var(--text-color);
+}
+footer .container .head{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+footer .container .head>*{
+    padding: 0 30px;
+    color: var(--lightsteelblue);
+}
+footer .container .head .logo{
+    position: relative;
+}
+footer .container .head .logo::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 40px;
+    background-color: var(--roman-silver);
+}
+footer .container .form-box p{
+    font-size: var(--fs-20px);
+    color: var(--lightsteelblue);
+}
+footer .container .form-box form{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:25px 10px;
+    margin: 15px 0 50px 0;
+    color: var(--lightsteelblue);
+}
+footer .container .form-box form input[type="email"]{
+    max-width: 400px;
+    width: 100%;
+    padding: 10px 25px;
+    border-radius: 80px;
+    border:1px solid var(--roman-silver) ;
+    background-color: transparent;
+}
+footer .container .form-box form input[type="submit"]{
+    border-radius: 60px;
+}
+footer .container .footer-services{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+footer .container .footer-services>*{
+    position: relative;
+    padding-right: 20px;
+    font-size: var(20px);
+    color: var(--lightsteelblue);
+}
+footer .container .footer-services>*:not(:last-child) ::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 2px;
+    height:20px;
+    transform: translateY(-50%);
+    background-color: var(--roman-silver);
+}
+footer .container .copyright{
+    color: var(--lightsteelblue);
 }
